@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'Gotham Pro';
-  src: url('./font/GothamProLig.woff2') format('woff2'), url('./font/GothamProLig.woff') format('woff');
+  src: url('../font/GothamProLig.woff2') format('woff2'), url('../font/GothamProLig.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gotham Pro';
-  src: url('./font/GothamProBol.woff2') format('woff2'), url('./font/GothamProBol.woff') format('woff');
+  src: url('../font/GothamProBol.woff2') format('woff2'), url('../font/GothamProBol.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gotham Pro';
-  src: url('./font/GothamProLigIta.woff2') format('woff2'), url('./font/GothamProLigIta.woff') format('woff');
+  src: url('../font/GothamProLigIta.woff2') format('woff2'), url('../font/GothamProLigIta.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
@@ -90,6 +90,7 @@ button {
 
 .info-company {
   width: 20%;
+  /* margin-left: auto; */
 }
 
 .info-company__phone-num {
@@ -97,8 +98,8 @@ button {
   line-height: 16px;
   color: #ffffff;
   font-weight: bold;
-  padding: 0px 0px 0px 1px;
   margin-bottom: 6px;
+  padding-left: 2px;
 }
 
 .info-company__shedule {
