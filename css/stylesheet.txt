@@ -1,0 +1,71 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-fb {
+    width: 6px;
+    height: 13px;
+    background-position: -5px -5px;
+}
+
+.sprite-feed_icon {
+    width: 20px;
+    height: 18px;
+    background-position: -21px -5px;
+}
+
+.sprite-feed_icon_star {
+    width: 20px;
+    height: 18px;
+    background-position: -51px -5px;
+}
+
+.sprite-google {
+    width: 15px;
+    height: 9px;
+    background-position: -81px -5px;
+}
+
+.sprite-mail {
+    width: 12px;
+    height: 9px;
+    background-position: -106px -5px;
+}
+
+.sprite-main_icon {
+    width: 17px;
+    height: 15px;
+    background-position: -128px -5px;
+}
+
+.sprite-main_icon_def {
+    width: 17px;
+    height: 15px;
+    background-position: -155px -5px;
+}
+
+.sprite-twitter {
+    width: 11px;
+    height: 9px;
+    background-position: -182px -5px;
+}
+
+.sprite-vk {
+    width: 12px;
+    height: 7px;
+    background-position: -203px -5px;
+}
+
+.sprite-wallet-icon-active {
+    width: 19px;
+    height: 16px;
+    background-position: -225px -5px;
+}
+
+.sprite-wallet_icon {
+    width: 19px;
+    height: 16px;
+    background-position: -254px -5px;
+}

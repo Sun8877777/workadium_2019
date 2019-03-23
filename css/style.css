@@ -81,7 +81,7 @@ button {
 
 .main-logo {
   width: 15%;
-  height: 75px;
+  height: 76px;
   background-repeat: no-repeat;
   background-position: 19px 12px;
   padding: 12px 0 0 19px;
@@ -90,7 +90,6 @@ button {
 
 .info-company {
   width: 20%;
-  /* margin-left: auto; */
 }
 
 .info-company__phone-num {
@@ -99,7 +98,7 @@ button {
   color: #ffffff;
   font-weight: bold;
   margin-bottom: 6px;
-  padding-left: 2px;
+  padding-left: 1px;
 }
 
 .info-company__shedule {
@@ -183,7 +182,28 @@ button {
   text-transform: uppercase;
 }
 
-.main-nav__list li {}
+.main-nav__list li {
+  position: relative;
+}
+.main-nav__list a::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: -38px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+}
+.main-nav__list .main-nav__link-main::before {
+  background-position: -154px -2px;
+}
+.main-nav__list .main-nav__link-review::before {
+  background-position: -50px -4px;
+}
+.main-nav__list .main-nav__link-tarif::before {
+  background-position: -253px -4px;
+}
 
 .main-nav__link {
   display: block;
@@ -466,8 +486,11 @@ button {
   width: 140px;
   margin-left: 30px;
 }
-
+/* .social__list li {
+  position: relative;
+} */
 .social_link {
+  position: relative;
   font-size: 0;
   display: block;
   width: 20px;
@@ -475,6 +498,48 @@ button {
   background-color: #ffffff;
   border-radius: 50%;
 }
-.social_link--vk {
-
+.social_link::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
 }
+.social_link--vk::before {
+  background-position: -200px 1px;
+}
+.social_link--fb::before {
+  background-position: 1px -1px;
+}
+.social_link--g::before {
+  background-position: -79px 1px;
+}
+.social_link--tw::before {
+  background-position: -178px 1px;
+}
+.social_link--mail::before {
+  background-position: -103px 0px;
+}
+
+/* Стили для страницы с тарифами */
+.tarifs .info-company__shedule-list {
+  display: block;
+  margin-top: 24px;
+  box-shadow: 5px 5px 10px 0px #cecece;
+}
+.tarifs .main-nav__list {
+  padding-top:15px;
+}
+.tarifs .main-nav__link-main::before {
+  background-position: -127px -2px;
+}
+.tarifs .main-nav__link-review::before {
+  background-position: -50px -2px;
+}
+.tarifs .main-nav__link-tarif::before {
+  background-position: -224px -4px;
+}
+/* Конец */
