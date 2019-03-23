@@ -1,23 +1,170 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
-  <title>Первая страница</title>
+  <meta name="description" content="Коворкинг для всех">
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Главная страница</title>
 </head>
+
 <body>
-  <header>
-    <h1>Первая страница на профессии</h1>
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <div class="main-header__info">
+        <a href="#" class="main-logo">
+          <img src="./img/logo-fig.png" alt="Коворкинг">
+        </a>
+        <div class="info-company">
+          <p class="info-company__phone-num">8 (800) 00-392-10</p>
+          <div class="info-company__shedule">
+            <a href="#" class="info-company__text">График работы</a>
+            <ul class="info-company__shedule-list">
+              <li class="info-company__shedule-item">пн-вс: 09:00-20:00</li>
+              <li class="info-company__shedule-item">обед: 14:00-14:30</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-header__banner">
+        <h1 class="visually-hidden">Коврокинг товей мечты</h1>
+      </div>
+    </div>
   </header>
-  <main>
-    <p>Первый блок</p>
-    <figure>
-      <img src="" alt="">
-    </figure>
-    
-    <figure>
-      <img src="" alt="">
-    </figure>
-    
+  <main class="main">
+    <div class="main__wrapper">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li><a href="#" class="main-nav__link main-nav__link--active">Главная</a></li>
+          <li><a href="reviews.html" class="main-nav__link">Отзывы</a></li>
+          <li><a href="tarifs.html" class="main-nav__link">Тарифы</a></li>
+        </ul>
+      </nav>
+      <div class="main-content">
+        <section class="features">
+          <h2 class="features__title">Особенности</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__logo features__logo--flower"></div>
+              <h3 class="features__item-title">Уникальность</h3>
+              <p class="features__slogan">Создан для вашего комфортного отдыха</p>
+              <ul class="features__advantages advantage">
+                <li class="advantage__item">Кофе/чай</li>
+                <li class="advantage__item">Шкаф (5 кг) </li>
+                <li class="advantage__item">Рабочее место</li>
+              </ul>
+            </li>
+            <li class="features__item">
+              <div class="features__logo  features__logo--star"></div>
+              <h3 class="features__item-title">Премиум-класс</h3>
+              <p class="features__slogan">Для любителей хороших впечатлений</p>
+              <ul class="features__advantages advantage">
+                <li class="advantage__item">Обед+кофе</li>
+                <li class="advantage__item">Шкаф (10 кг) </li>
+                <li class="advantage__item">Детское кресло</li>
+              </ul>
+            </li>
+            <li class="features__item">
+              <div class="features__logo features__logo--palette"></div>
+              <h3 class="features__item-title">Лакшери-стулья</h3>
+              <p class="features__slogan">Все самое лучшее и незабываемое</p>
+              <ul class="features__advantages advantage">
+                <li class="advantage__item">Джакузи</li>
+                <li class="advantage__item">Шкаф (15 кг) </li>
+                <li class="advantage__item">Табуретка</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="news">
+          <h2 class="news__title">Последние новости</h2>
+          <ul class="news__list">
+            <li class="news__item">
+              <a class="news__logo">
+                <img src="./img/index-1.jpg" alt="Черная дыра скидок">
+              </a>
+              <div class="news__info">
+                <time class="news__time">12.10.2016</time>
+                <h3 class="news__head">Черная дыра скидок!</h3>
+                <p class="news__desc">Ключевым технологическим партнером GrowUp является дата-центр Миран, 
+                  расположенный всего лишь в 500 метрах от здания, а значит, скорость интернета будет стабильной в любое время суток. Коворкин гработает в формате 24/7. 
+                  Используйте шкаф для хранения личных вещей.
+                </p>
+              </div>
+            </li>
+            <li class="news__item">
+              <a class="news__logo">
+                <img src="./img/index-2.jpg" alt="Парень с факелом">
+              </a>
+              <div class="news__info">
+                <time class="news__time">01.02.2016</time>
+                <h3 class="news__head">Заражай друзей, получай призы!</h3>
+                <p class="news__desc">Быть частью сообщества сильных, грамотных и увлеченных своим делом профессионалов - вдохновляет выходить на новые уровни развития. 
+                  Регулярно в коворкинге проводятся лекции, мастер-классы, встречи с инвесторами или менторами для резидентов.
+                </p>
+              </div>
+            </li>
+            <li class="news__item">
+              <a class="news__logo">
+                <img src="./img/index-3.jpg" alt="Ноутбук на столе">
+              </a>
+              <div class="news__info">
+                <time class="news__time">22.12.2015</time>
+                <h3 class="news__head">Новое рабочее место для бизнесменов.</h3>
+                <p class="news__desc">
+                  Для резидентов коворкинга оборудована не только рабочая зона, но и зона отдыха. Она включает в себя:
+                  кухонную зону и зону релакса. <br> Каждый резидент может беспрепятственно пользоваться кухонным оборудованием: микроволновкой, чайником, кофе машиной, посудой.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="paginator">
+            <div class="paginator__label">Страница <span>1</span> из <span>7</span></div>
+            <div class="paginator__controls">
+              <a href="#" class="paginator__prev-link">&#60;</a>
+              <ul class="paginator__list">
+                <li><a href="#" class="paginator__link paginator__link--active">1</a></li>
+                <li><a href="#" class="paginator__link">2</a></li>
+                <li><a href="#" class="paginator__link">3</a></li>
+                <li><a href="#" class="paginator__link">4</a></li>
+                <li><a href="#" class="paginator__link">5</a></li>
+                <li><a href="#" class="paginator__link">6</a></li>
+                <li><a href="#" class="paginator__link">7</a></li>
+              </ul>  
+              <a href="#" class="paginator__next-link">&#62;</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
   </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <ul class="footer__list">
+        <li class="footer__item author-info">
+          <p class="author-info__text">Сделано с любовью и старанием <br> на курсе &#171;HTML + CSS&#187; в <a>LoftSchool.</a></p>
+          <p class="author-info__author">Автор работы: <strong>Прохладов Вадим</strong></p>
+        </li>
+        <li class="footer-logo">
+          <a href="#" class="main-logo">
+              <img src="./img/logo-fig.png" alt="Коворкинг">
+            </a>
+        </li>
+        <li class="social">
+          <p class="social__title-list">Наши социальные сети</p>
+          <ul class="social__list">
+            <li><a href="" class="social_link social_link--vk">Коворкинг во "Вконтакте"</a></li>
+            <li><a href="" class="social_link social_link--fb">Коворкинг во "Фейсбук"</a></li>
+            <li><a href="" class="social_link social_link--g+">Коворкинг во "Gooogle plus"</a></li>
+            <li><a href="" class="social_link social_link--tw">Коворкинг во "Твиттере"</a></li>
+            <li><a href="" class="social_link social_link--mail">Коворкинг в "Майл"</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
+
 </html>
