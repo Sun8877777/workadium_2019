@@ -11,18 +11,17 @@
 <body>
   <div class="wrapper wrapper--tarifs">
     <header class="header">
-      <div class="container container--flex">        
-          <a href="index.html" class="logo">
-            <img src="./img/logo-fig.png" alt="Коворкинг" class="logo__img">
-          </a>
-          <div class="info-company">
-            <a href="tel: +78000039210" class="info-company__phone-num">8 (800) 00-392-10</a>
-            <div class="info-company__shedule">
-              <button type="button" class="info-company__text">График работы</button>
-              <div class="info-company__shedule-list">
-                <span class="info-company__shedule-item">пн-вс: 09:00-20:00</span>
-                <span class="info-company__shedule-item">обед: 14:00-14:30</span>
-              </div>
+      <div class="container container--flex">
+        <a href="index.html" class="logo">
+          <img src="./img/logo-fig.png" alt="Коворкинг" class="logo__img">
+        </a>
+        <div class="info-company">
+          <a href="tel: +78000039210" class="info-company__phone-num">8 (800) 00-392-10</a>
+          <div class="info-company__shedule">
+            <button type="button" class="info-company__text">График работы</button>
+            <div class="info-company__shedule-list">
+              <span class="info-company__shedule-item">пн-вс: 09:00-20:00</span>
+              <span class="info-company__shedule-item">обед: 14:00-14:30</span>
             </div>
           </div>
         </div>
@@ -42,7 +41,10 @@
         <div class="main-content">
           <section class="tarifs">
             <div class="tarifs__path path">
-              <p class="path__position"><a href="index.html" class="path__main-page">Главная</a>/Тарифы</p>
+              <div class="breadcrumbs">
+                <a href="index.html" class="breadcrumbs__link">Главная</a>
+                <span class="breadcrumbs__text">/Тарифы</span>
+              </div>
               <h1 class="tarifs__title">Тарифы</h1>
               <ul class="tarifs__list">
                 <li class="tarifs__item tarif">
@@ -110,27 +112,26 @@
     </main>
     <footer class="footer">
       <div class="container container--flex">
-          <div class="footer__item author-info">
-            <p class="author-info__text">Сделано с любовью и старанием <br> на курсе &#171;HTML + CSS&#187; в
-              <a>LoftSchool.</a></p>
-            <p class="author-info__author">Автор работы: <strong>Прохладов Вадим</strong></p>
-          </div>
-          <div class="footer-logo">
-            <a class="logo">
-              <img src="./img/logo-fig.png" alt="Коворкинг" class="logo__img">
-            </a>
-          </div>
-          <div class="social">
-            <h4 class="social__title-list">Наши социальные сети</h4>
-            <ul class="social__list">
-              <li class="social__item"><a href="" class="social_link social_link--vk">Коворкинг во "Вконтакте"</a></li>
-              <li class="social__item"><a href="" class="social_link social_link--fb">Коворкинг во "Фейсбук"</a></li>
-              <li class="social__item"><a href="" class="social_link social_link--g">Коворкинг во "Gooogle plus"</a>
-              </li>
-              <li class="social__item"><a href="" class="social_link social_link--tw">Коворкинг во "Твиттере"</a></li>
-              <li class="social__item"><a href="" class="social_link social_link--mail">Коворкинг в "Майл"</a></li>
-            </ul>
-          </div>
+        <div class="footer__item author-info">
+          <p class="author-info__text">Сделано с любовью и старанием <br> на курсе &#171;HTML + CSS&#187; в
+            <a>LoftSchool.</a></p>
+          <p class="author-info__author">Автор работы: <strong>Прохладов Вадим</strong></p>
+        </div>
+        <div class="footer-logo">
+          <a class="logo">
+            <img src="./img/logo-fig.png" alt="Коворкинг" class="logo__img">
+          </a>
+        </div>
+        <div class="social">
+          <h4 class="social__title-list">Наши социальные сети</h4>
+          <ul class="social__list">
+            <li class="social__item"><a href="" class="social_link social_link--vk">Коворкинг во "Вконтакте"</a></li>
+            <li class="social__item"><a href="" class="social_link social_link--fb">Коворкинг во "Фейсбук"</a></li>
+            <li class="social__item"><a href="" class="social_link social_link--g">Коворкинг во "Gooogle plus"</a>
+            </li>
+            <li class="social__item"><a href="" class="social_link social_link--tw">Коворкинг во "Твиттере"</a></li>
+            <li class="social__item"><a href="" class="social_link social_link--mail">Коворкинг в "Майл"</a></li>
+          </ul>
         </div>
       </div>
     </footer>
