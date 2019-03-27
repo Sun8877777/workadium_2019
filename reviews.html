@@ -85,7 +85,8 @@
                   <p class="reviews__text">Захожу сюда не часто, так как не мой район, но когда бываю в центре, то
                     периодически нужно место для плодотворной работы. Интернет-клубы не подходят, так как не
                     обеспечивают такой уровень сервиса, как Воркадиум. Здесь я нахожу вдохновение и могу выделить
-                    время для творчества. Желаю Воркадиуму процветания и развития. Если будете открывать филиалы, обратите
+                    время для творчества. Желаю Воркадиуму процветания и развития. Если будете открывать филиалы,
+                    обратите
                     внимание на Алексеевский район, я буду вашим постоянным клиентом :)
                   </p>
                 </div>
@@ -99,7 +100,8 @@
                   <h3 class="reviews__author-name">Наталья Осадчая</h3>
                   <p class="reviews__text">Провожу здесь встречи с клиентами в неформальной обстановке. Удобно, что
                     при необходимости все под рукой – и ксерокс, и принтер и магазин канцелярии. Заключаю здесь свои
-                    лучшие договора. Единственное пожелание – сделайте еще несколько переговорных комнат на 10-15 человек, а
+                    лучшие договора. Единственное пожелание – сделайте еще несколько переговорных комнат на 10-15
+                    человек, а
                     то они пользуются большим спросом и не всегда есть возможность забронировать.
                   </p>
                 </div>
@@ -126,37 +128,47 @@
       </div>
       <section class="promo">
         <div class="container">
-          <p class="promo__text">Для наших новых клиентов мы предлагаем <span class="promo__privilege" >скидку 50%</span> на первый день!
+          <p class="promo__text">Для наших новых клиентов мы предлагаем <span class="promo__privilege">скидку 50%</span>
+            на первый день!
             Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!</p>
         </div>
       </section>
       <section class="main__content">
         <div class="container">
-          <form action="#" class="feedback-form">
-            <h2 class="title"></h2>
-            <div class="feedback-form__wrapper">
-              <div class="feedback-form__header">
-                <label for="your_name" class="feedback-form__label">Ваше имя</label>
-                <input type="text" name="your_name" id="your_name" placeholder="Андрей">
-                <label for="your_profile" class="feedback-form__label">Ссылка на профиль VK</label>
-                <input type="text" name="your_profile" id="your_profile" placeholder="vk.com/example">
-              </div>
-              <label for="feedback-text" class="feedback-form__label">Текст отзыва</label>
-              <textarea name="feedback-text" id="feedback-text" cols="30" rows="10">
-                  Мне понравилось
-              </textarea>
-              <div class="feedback-form__footer form-footer">
-                <div class="form-footer__item">
-                  <p class="form-footer__item-title">Отображать фото в Отзыве?</p>
-                  <input type="radio" name="view-photo" id="view-photo-yes" checked>
-                  <label for="view-photo-yes">Да</label>
-                  <input type="radio" name="view-photo" id="view-photo-no">
-                  <label for="view-photo-yes">Нет</label>
+          <section class="feedback">
+            <form action="#" class="feedback__form">
+              <div class="feedback__main-wrapper">
+                <h2 class="section-title">Оставить отзыв</h2>
+                <div class="feedback__wrapper container--flex">
+                  <div class="feedback__wrapper-item">
+                    <label for="your_name" class="feedback__label">Ваше имя</label>
+                    <input type="text" name="your_name" id="your_name" class="feedback__user-info" placeholder="Андрей">
+                  </div>
+                  <div class="feedback__wrapper-item">
+                    <label for="your_profile" class="feedback__label">Ссылка на профиль VK</label>
+                    <input type="text" name="your_profile" id="your_profile" class="feedback__user-info"
+                      placeholder="vk.com/example">
+                  </div>
                 </div>
-                <button type="submit">Отправить</button>
+                <div class="feedback__wrapper">
+                  <label for="feedback-text" class="feedback__label">Текст отзыва</label>
+                  <textarea name="feedback-text" id="feedback-text" class="feedback__text-review" cols="20" rows="5">
+                      Мне понравилось
+                    </textarea>
+                </div>
+                <div class="feedback__wrapper container--flex">                  
+                  <div class="feedback__wrapper-item">
+                    <p class="feedback__user-choise">Отображать фото в отзыве?</p>
+                    <input type="radio" name="view-photo" id="view-photo-yes" class="feedback__input-radio visually-hidden" checked>
+                    <label for="view-photo-yes" class="feedback__label feedback__label--radio">Да</label>
+                    <input type="radio" name="view-photo" id="view-photo-no" class="feedback__input-radio visually-hidden">
+                    <label for="view-photo-no" class="feedback__label feedback__label--radio">Нет</label>
+                  </div>
+                  <button type="submit" class="feedback__submit">Отправить</button>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </section>
         </div>
       </section>
     </main>
@@ -187,6 +199,11 @@
 
     </footer>
   </div>
+  <script>
+    'use strict';
+    var formFeedbackText = document.querySelector('#feedback-text');
+    formFeedbackText.innerHTML = 'Мне понравилось';
+  </script>
 </body>
 
 </html>

@@ -60,9 +60,11 @@ ul,
 li,
 a,
 button,
-figure {
+figure,
+form {
   box-sizing: border-box;
 }
+
 .wrapper {
   min-width: 1100px;
 }
@@ -258,7 +260,7 @@ figure {
 }
 
 .features {
-  padding-bottom: 25px;
+  padding-bottom: 23px;
 }
 
 .section-title {
@@ -291,12 +293,13 @@ figure {
 }
 
 .features__logo {
-  height: 80px;
-  width: 80px;
-  margin: 0 auto;
+  height: 71px;
+  width: 71px;
   background-repeat: no-repeat;
-  background-position: center 0px;
-  padding-bottom: 8px;
+  background-position: center center;
+  background-color: #27273e;
+  border-radius: 50%;
+  margin-bottom: 18px;
 }
 
 .features__logo--flower {
@@ -309,6 +312,9 @@ figure {
 
 .features__logo--palette {
   background-image: url('../img/painter-palette.png');
+  width: 66px;
+  height: 66px;
+  margin-bottom: 23px;
 }
 
 .features__item-title {
@@ -367,7 +373,7 @@ figure {
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
   padding-bottom: 25px;
-  padding-top: 18px;
+  padding-top: 19px;
 }
 
 .news__item {
@@ -383,22 +389,26 @@ figure {
 
 .news__logo {
   display: block;
-  margin: 0;
-  margin-right: 20px;
-  padding: 4px 0 0 2px;
-}
-
-.news__image {
-  display: block;
   width: 160px;
   height: 160px;
-  background-image: url(../img/logo-fig-rewiews.png);
-  background-repeat: no-repeat;
-  background-position: center 40%;
+  margin: 0;
+  margin-top: 4px;
+  margin-right: 20px;
+  /* padding: 4px 0 0 2px; */
+  overflow: hidden;
   border-radius: 50%;
 }
 
-.news__info {}
+.news__image {
+  background-image: url(../img/logo-fig-rewiews.png);
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  margin: -2px 0 0 -5px;
+}
+
+.news__info {
+  width: 80%;
+}
 
 .news__time {
   color: #6f6e6e;
@@ -689,6 +699,7 @@ figure {
 .promo {
   background-image: url('../img/review-backgr-01.jpg');
   background-color: #27273e;
+  margin-bottom: 58px;
 }
 .promo__text {
   font-size: 18px;
@@ -699,6 +710,116 @@ figure {
 .promo__privilege {
   color: #ec1e79;
   font-weight: bold;
+}
+.feedback {
+  padding-bottom: 49px;
+}
+.feedback__form {
+  width: 63.5%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+.feedback__main-wrapper {
+  width: 562px;
+  margin: 0 auto;
+  padding-top: 23px;
+}
+.feedback__form .section-title {
+  padding-left: 0px;
+  letter-spacing: -0.5px;
+  line-height: 8px;
+}
+
+.feedback__wrapper {
+  margin-bottom: 8px;
+}
+
+.feedback__label {
+  display: block;
+  margin-bottom: 7px;
+}
+.feedback__user-info {
+  display: block;
+  width: 270px;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 10px;
+  margin-bottom: 9px;
+  box-sizing: border-box;
+}
+
+.feedback__form input:focus,
+.feedback__form textarea:focus,
+.feedback__submit:focus {
+  outline: 0;
+  box-shadow: 0 0 0 1px #ec1e79;
+}
+
+.feedback__text-review {
+  overflow: auto;
+  resize: none;
+  width: 99.7%;
+  height: 88px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 0 8px 10px;
+  box-sizing: border-box;
+}
+.feedback__user-choise {
+  line-height: 0px;
+}
+.feedback__label--radio {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-top: 3px;
+  margin-right: 13px;
+  padding-left: 26px;
+  cursor: pointer;
+}
+.feedback__label--radio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #cacaca;
+  border-radius: 50%;
+}
+.feedback__input-radio:checked + .feedback__label--radio::before {
+  border-color: #ec1e79;
+}
+
+.feedback__input-radio:checked + .feedback__label--radio::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  width: 10px;
+  height: 10px;
+  background-color: #ec1e79;
+  border-radius: 50%;
+}
+.feedback__submit {
+  height: 46px;
+  width: 140px;
+  box-sizing: border-box;
+  margin-top: 9px;
+  border: none;
+  border-radius: 3px;
+  background-color: #27273e;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+.feedback__submit:hover {
+  background-color: #ec1e79;
 }
 /*Конец*/
 
