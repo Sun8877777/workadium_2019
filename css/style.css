@@ -46,10 +46,12 @@
     transform: scale(1) rotate(0deg);
   }
 }
+
 @keyframes logo {
   0% {
     transform: scale(0.7);
   }
+
   100% {
     transform: scale(1.2);
   }
@@ -136,6 +138,7 @@ img {
   padding: 12px 0 0 19px;
   cursor: pointer;
 }
+
 .logo:hover .logo__img {
   animation: logo 500ms ease-in-out 0ms 4 alternate forwards;
 }
@@ -252,19 +255,6 @@ img {
   position: relative;
 }
 
-.nav__link::before {
-  content: "";
-  position: absolute;
-  top: 13px;
-  left: -38px;
-  width: 21px;
-  height: 21px;
-  background-image: url(../img/sprite.png);
-  background-repeat: no-repeat;
-  transition-duration: 500ms;
-  transition-property: background-position; 
-}
-
 .nav__link {
   display: block;
   font-size: 12px;
@@ -274,28 +264,65 @@ img {
   color: #b12167;
 }
 
+.nav__link::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: -38px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  transition: 500ms;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: -38px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: 500ms;
+}
+
 .nav__list .nav__link-main::before {
-  background-position: -154px -2px;
+  background-position: -154px -3px;
 }
 
 .nav__list .nav__link-review::before {
-  background-position: -50px -4px;
+  background-position: -50px -3px;
 }
 
 .nav__list .nav__link-tarif::before {
-  background-position: -253px -2px;
+  background-position: -253px -3px;
+}
+
+.nav__list .nav__link-main::after {
+  background-position: -154px -3px;
+}
+
+.nav__link-review::after {
+  background-position: -20px -3px;
+}
+
+.nav__link-tarif::after {
+  background-position: -224px -3px;
 }
 
 .nav__link:hover {
   color: #000000;
 }
 
-.nav__link-review:hover::before {
-  background-position: -20px -4px;
+.nav__link:hover::before {
+  opacity: 0;
 }
 
-.nav__link-tarif:hover::before {
-  background-position: -224px -2px;
+.nav__link:hover::after {
+  opacity: 1;
 }
 
 .nav__link--active {
@@ -650,23 +677,23 @@ img {
 }
 
 .wrapper--reviews .nav__link--active::before {
-  background-position: -20px -2px;
+  background-position: -20px -3px;
 }
 
 .wrapper--reviews .nav__link-main::before {
-  background-position: -127px -2px;
+  background-position: -127px -3px;
 }
 
 .wrapper--reviews .nav__link-tarif::before {
-  background-position: -253px -4px;
+  background-position: -253px -3px;
 }
 
-.wrapper--reviews .nav__link-tarif:hover::before {
-  background-position: -224px -4px;
+.wrapper--reviews .nav__link-tarif:hover::after {
+  background-position: -224px -3px;
 }
 
-.wrapper--reviews .nav__link-main:hover::before {
-  background-position: -154px -2px;
+.wrapper--reviews .nav__link-main:hover::after {
+  background-position: -154px -3px;
 }
 
 .wrapper--reviews .main-content {
@@ -920,26 +947,33 @@ img {
   padding-top: 15px;
 }
 
+.wrapper--tarifs .nav__link--active::before {
+  background-position: -224px -3px;
+}
+.wrapper--tarifs .nav__link--active:hover::after {
+  background-position: -224px -3px;
+}
+.wrapper--tarifs .nav__link-tarif::before {
+  background-position: -224px -3px;
+}
+.wrapper--tarifs .nav__link-tarif:hover::after {
+  background-position: -224px -3px;
+}
+
 .wrapper--tarifs .nav__link-main::before {
-  background-position: -127px -2px;
+  background-position: -127px -3px;
+}
+.wrapper--tarifs .nav__link-main:hover::after {
+  background-position: -154px -3px;
 }
 
 .wrapper--tarifs .nav__link-review::before {
-  background-position: -50px -2px;
+  background-position: -50px -3px;
+}
+.wrapper--tarifs .nav__link-review:hover::after {
+  background-position: -20px -3px;
 }
 
-.wrapper--tarifs .nav__link-tarif::before {
-  background-position: -224px -4px;
-}
-
-
-.wrapper--tarifs .nav__link-review:hover::before {
-  background-position: -20px -2px;
-}
-
-.wrapper--tarifs .nav__link-main:hover::before {
-  background-position: -154px -2px;
-}
 
 .wrapper--tarifs .main-content {
   padding-top: 41px;
@@ -971,7 +1005,7 @@ img {
 
 .tarifs__item {
   width: 250px;
-  height: 417px;
+  min-height: 417px;
   text-align: center;
   margin-right: 55px;
   overflow: hidden;
@@ -1010,6 +1044,7 @@ img {
   box-sizing: border-box;
   text-transform: uppercase;
 }
+
 .tarig__logo-caption-vip {
   display: block;
   font-size: 24px;
@@ -1116,6 +1151,7 @@ img {
   width: 161px;
   height: 119px;
 }
+
 .intro__link {
   display: block;
   text-align: center;
@@ -1136,7 +1172,7 @@ img {
 .intro__link:hover {
   color: #ffffff;
   background-color: #b12167;
-  transition-duration: 300ms; 
+  transition-duration: 300ms;
 }
 
 /*Конец  */
