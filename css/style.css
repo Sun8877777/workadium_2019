@@ -1105,15 +1105,17 @@ img {
 }
 
 .intro__logo {
-  background-image: url(../img/intro-logo.png);
-  background-repeat: no-repeat;
-  background-position: center 0px;
   width: 200px;
   height: 140px;
   margin-bottom: 8px;
-
+  padding: 0 0 0 19px;
+  box-sizing: border-box;
 }
 
+.intro__image {
+  width: 161px;
+  height: 119px;
+}
 .intro__link {
   display: block;
   text-align: center;
