@@ -1115,6 +1115,7 @@ img {
 .intro__link:hover {
   color: #ffffff;
   background-color: #b12167;
+  transition-duration: 300ms; 
 }
 
 /*Конец  */
