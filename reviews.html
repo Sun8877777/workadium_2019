@@ -12,7 +12,7 @@
   <div class="wrapper wrapper--reviews">
     <header class="header">
       <div class="container container--flex">
-        <a href="index.html" class="logo">
+        <a href="main.html" class="logo">
           <img src="./img/logo-fig.png" alt="Коворкинг" class="logo__img">
         </a>
         <div class="info-company">
@@ -32,8 +32,8 @@
         <aside class="sidebar">
           <nav class="nav">
             <ul class="nav__list">
-              <li class="nav__item"><a href="index.html" class="nav__link nav__link-main">Главная</a></li>
-              <li class="nav__item"><a href="#" class="nav__link nav__link-review nav__link--active">Отзывы</a></li>
+              <li class="nav__item"><a href="main.html" class="nav__link nav__link-main">Главная</a></li>
+              <li class="nav__item"><a class="nav__link nav__link-review nav__link--active">Отзывы</a></li>
               <li class="nav__item"><a href="tarifs.html" class="nav__link nav__link-tarif">Тарифы</a></li>
             </ul>
           </nav>
@@ -134,11 +134,11 @@
         </div>
       </section>
       <section class="main__content">
-        <div class="container">
-          <section class="feedback">
+        <section class="feedback">
+          <div class="container container--feedback">
+            <h2 class="section-title section-title--feedback">Оставить отзыв</h2>
             <form action="#" class="feedback__form">
               <div class="feedback__main-wrapper">
-                <h2 class="section-title">Оставить отзыв</h2>
                 <div class="feedback__wrapper container--flex">
                   <div class="feedback__wrapper-item">
                     <label for="your_name" class="feedback__label">Ваше имя</label>
@@ -156,20 +156,22 @@
                       Мне понравилось
                     </textarea>
                 </div>
-                <div class="feedback__wrapper container--flex">                  
+                <div class="feedback__wrapper container--flex">
                   <div class="feedback__wrapper-item">
                     <p class="feedback__user-choise">Отображать фото в отзыве?</p>
-                    <input type="radio" name="view-photo" id="view-photo-yes" class="feedback__input-radio visually-hidden" checked>
-                    <label for="view-photo-yes" class="feedback__label feedback__label--radio">Да</label>
-                    <input type="radio" name="view-photo" id="view-photo-no" class="feedback__input-radio visually-hidden">
-                    <label for="view-photo-no" class="feedback__label feedback__label--radio">Нет</label>
+                    <input type="radio" name="view-photo" id="view-photo-yes"
+                      class="feedback__input-radio visually-hidden" checked>
+                    <label for="view-photo-yes" class="feedback__label feedback__label--radio" tabindex="0">Да</label>
+                    <input type="radio" name="view-photo" id="view-photo-no"
+                      class="feedback__input-radio visually-hidden">
+                    <label for="view-photo-no" class="feedback__label feedback__label--radio" tabindex="0">Нет</label>
                   </div>
                   <button type="submit" class="feedback__submit">Отправить</button>
                 </div>
               </div>
             </form>
-          </section>
-        </div>
+          </div>
+        </section>
       </section>
     </main>
     <footer class="footer">
@@ -180,7 +182,7 @@
           <p class="author-info__author">Автор работы: <strong>Прохладов Вадим</strong></p>
         </div>
         <div class="footer-logo">
-          <a class="logo">
+          <a href="main.html" class="logo">
             <img src="./img/logo-fig.png" alt="Коворкинг" class="logo__img">
           </a>
         </div>
