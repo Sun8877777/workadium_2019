@@ -1,0 +1,9 @@
+.banner {
+  background-color: #27273e;
+}
+
+.banner__image {
+  background-image: url('/img/banner-index.jpg');
+  background-repeat: no-repeat;
+  min-height: 358px;
+}

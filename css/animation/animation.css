@@ -1,0 +1,23 @@
+@keyframes intro-page {
+  0% {
+    transform: scale(0);
+  }
+
+  33% {
+    transform: scale(0.5) rotate(-45deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(0.7);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}

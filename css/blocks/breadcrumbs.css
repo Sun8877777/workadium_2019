@@ -1,0 +1,11 @@
+
+.breadcrumbs {
+  font-style: italic;
+}
+
+.breadcrumbs__link {
+  color: #f06499;
+  padding-left: 6px;
+}
+
+.breadcrumbs__text {}

@@ -1,0 +1,43 @@
+
+.footer {
+  background-color: #27273e;
+  background-repeat: repeat;
+  color: #ffffff;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer__wrapper {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.footer__item {}
+
+.author-info {
+  width: 27%;
+}
+
+.author-info__text {
+  padding: 10px 6px 0 19px;
+  margin: 0;
+}
+
+.author-info__text a {
+  font-weight: bold;
+  text-decoration-color: #74747f;
+}
+
+.author-info__author {
+  margin: 0;
+  padding-left: 18px;
+  padding-bottom: 14px;
+}
+
+.footer-logo {
+  width: 20%;
+  padding: 0px 0 0 40px;
+  margin-top: -4px;
+}

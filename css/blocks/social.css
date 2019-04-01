@@ -1,0 +1,65 @@
+
+.social {
+  width: 20%;
+}
+
+.social__title-list {
+  padding: 16px 0 0 29px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 6px 0 0 0;
+  width: 140px;
+  margin-left: 30px;
+}
+
+.social_link {
+  position: relative;
+  font-size: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: 300ms;
+}
+
+.social_link::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../../img/sprite.png);
+  background-repeat: no-repeat;
+}
+
+.social_link:hover {
+  background-color: #b12167;
+}
+
+.social_link--vk::before {
+  background-position: -200px 1px;
+}
+
+.social_link--fb::before {
+  background-position: 1px -1px;
+}
+
+.social_link--g::before {
+  background-position: -79px 1px;
+}
+
+.social_link--tw::before {
+  background-position: -178px 1px;
+}
+
+.social_link--mail::before {
+  background-position: -103px 0px;
+}

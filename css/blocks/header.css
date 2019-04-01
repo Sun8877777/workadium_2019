@@ -1,0 +1,115 @@
+
+.header {
+  background-color: #27273e;
+  color: #ffffff;
+}
+
+.header__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 15%;
+  height: 76px;
+  background-repeat: no-repeat;
+  background-position: 19px 12px;
+  padding: 12px 0 0 19px;
+  cursor: pointer;
+}
+
+.logo:hover .logo__img {
+  animation: logo 500ms ease-in-out 0ms 5 alternate forwards;
+}
+
+.info-company {
+  width: 20%;
+}
+
+.info-company__phone-num {
+  display: block;
+  font-size: 21px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 6px;
+  padding: 20px 0 0 1px;
+  text-decoration: none;
+}
+
+.info-company__phone-num:hover {
+  text-decoration: underline;
+}
+
+.info-company__shedule {
+  position: relative;
+}
+
+.info-company__text {
+  font-weight: bold;
+  letter-spacing: -0.1px;
+  color: #b12167;
+  padding: 0 0 0 84px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.info-company__text:hover {
+  color: #769dcd;
+}
+
+.info-company__shedule-list {
+  position: absolute;
+  z-index: 1;
+  top: 24px;
+  right: 20px;
+  display: none;
+  width: 162px;
+  height: 69px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  list-style: none;
+  padding: 13px 9px;
+  margin-top: 15px;
+  box-sizing: border-box;
+}
+
+.info-company__shedule-list::before {
+  content: '';
+  position: absolute;
+  top: -11px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #ffffff;
+  z-index: 2;
+}
+
+.info-company__text:hover+.info-company__shedule-list {
+  display: block;
+}
+
+.info-company__shedule-item {
+  display: block;
+  padding: 0 0 0 2px;
+  color: #000000;
+}
+
+.info-company__shedule-item:first-child {
+  color: #b12167;
+  font-weight: bold;
+  padding: 0 0 5px 2px;
+}
+
+.wrapper--reviews .info-company__shedule-list {
+  box-shadow: 5px 5px 10px 0px #cecece;
+}
+
+.wrapper--tarifs .info-company__shedule-list {
+  display: block;
+  margin-top: 24px;
+  box-shadow: 5px 5px 10px 0px #cecece;
+}

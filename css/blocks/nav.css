@@ -1,0 +1,144 @@
+
+
+.nav {}
+
+.nav__list {
+  list-style: none;
+  padding: 37px 0 0 57px;
+  text-transform: uppercase;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__link {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 49px;
+  color: #b12167;
+}
+
+.nav__link::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: -38px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../../img/sprite.png);
+  background-repeat: no-repeat;
+  transition: 500ms;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: -38px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../../img/sprite.png);
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: 500ms;
+}
+
+.nav__list .nav__link-main::before {
+  background-position: -154px -3px;
+}
+
+.nav__list .nav__link-review::before {
+  background-position: -50px -3px;
+}
+
+.nav__list .nav__link-tarif::before {
+  background-position: -253px -3px;
+}
+
+.nav__list .nav__link-main::after {
+  background-position: -154px -3px;
+}
+
+.nav__link-review::after {
+  background-position: -20px -3px;
+}
+
+.nav__link-tarif::after {
+  background-position: -224px -3px;
+}
+
+.nav__link:hover {
+  color: #000000;
+}
+
+.nav__link:hover::before {
+  opacity: 0;
+}
+
+.nav__link:hover::after {
+  opacity: 1;
+}
+
+.nav__link--active {
+  color: #000000;
+}
+
+.wrapper--reviews .nav__list {
+  padding-top: 15px;
+}
+
+.wrapper--reviews .nav__link--active::before {
+  background-position: -20px -3px;
+}
+
+.wrapper--reviews .nav__link-main::before {
+  background-position: -127px -3px;
+}
+
+.wrapper--reviews .nav__link-tarif::before {
+  background-position: -253px -3px;
+}
+
+.wrapper--reviews .nav__link-tarif:hover::after {
+  background-position: -224px -3px;
+}
+
+.wrapper--reviews .nav__link-main:hover::after {
+  background-position: -154px -3px;
+}
+
+
+.wrapper--tarifs .nav__list {
+  padding-top: 15px;
+}
+
+.wrapper--tarifs .nav__link--active::before {
+  background-position: -224px -3px;
+}
+.wrapper--tarifs .nav__link--active:hover::after {
+  background-position: -224px -3px;
+}
+.wrapper--tarifs .nav__link-tarif::before {
+  background-position: -224px -3px;
+}
+.wrapper--tarifs .nav__link-tarif:hover::after {
+  background-position: -224px -3px;
+}
+
+.wrapper--tarifs .nav__link-main::before {
+  background-position: -127px -3px;
+}
+.wrapper--tarifs .nav__link-main:hover::after {
+  background-position: -154px -3px;
+}
+
+.wrapper--tarifs .nav__link-review::before {
+  background-position: -50px -3px;
+}
+.wrapper--tarifs .nav__link-review:hover::after {
+  background-position: -20px -3px;
+}
+
