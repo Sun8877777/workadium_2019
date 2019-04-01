@@ -120,9 +120,3 @@ img {
   padding-bottom: 8px;
   line-height: 11px;
 }
-.wrapper--intro {
-  position: relative;
-  background-image: url('../img/intro-baner.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}

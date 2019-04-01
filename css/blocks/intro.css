@@ -1,3 +1,9 @@
+.wrapper--intro {
+  position: relative;
+  background-image: url('../../img/intro-baner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .intro {
   position: absolute;
