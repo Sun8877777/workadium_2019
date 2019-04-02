@@ -4,6 +4,7 @@ body,
   height: 100%;
 }
 
+
 body {
   margin: 0;
   padding: 0;
@@ -29,20 +30,12 @@ body {
   overflow: hidden;
 }
 
-p,
-ul,
-li,
-a,
-button,
-figure,
-form {
+* {
   box-sizing: border-box;
 }
 
 img {
   display: block;
-  /* max-width: 100%;
-  max-height: 100%; */
 }
 
 .wrapper {
