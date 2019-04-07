@@ -34,7 +34,3 @@
 .partners__logo {
   margin: 0 auto;
 }
-
-.partners__item:first-child .partners__logo {
-  /* padding-top: 11px */
-}

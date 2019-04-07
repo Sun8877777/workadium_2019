@@ -1,8 +1,8 @@
-
 .header {
   background-color: #27273e;
   color: #ffffff;
 }
+
 .header__container {
   display: flex;
 }
