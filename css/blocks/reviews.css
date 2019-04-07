@@ -1,12 +1,9 @@
 
 .reviews {
-  padding-top: 30px;
+  padding-top: 19px;
 }
 
 .reviews__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .reviews__item {
@@ -25,7 +22,7 @@
   display: block;
   width: 160px;
   height: 160px;
-  margin: 4px 19px 0 8px;
+  margin: 4px 19px 0 3px;
   background-image: url(../../img/logo-fig-rewiews.png);
   background-repeat: no-repeat;
   background-position: center 40%;
@@ -39,7 +36,7 @@
 }
 
 .reviews__user-block {
-  width: 77%;
+  width: 79%;
 }
 
 .reviews__time {

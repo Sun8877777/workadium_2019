@@ -1,9 +1,7 @@
-
 .paginator {
   display: flex;
-  /* justify-content: center; */
   font-family: "Roboto", "Arial", sans-serif;
-  width: 45%;
+  width: 61.5%;
   margin: 0 auto;
 }
 
@@ -36,6 +34,7 @@
   cursor: pointer;
   padding: 4px 8px;
   margin-left: 1px;
+  color: #000000;
 }
 
 .paginator__link--active {
@@ -49,9 +48,10 @@
 }
 
 .wrapper--reviews .paginator {
-  width: 54%;
+  width: 55%;
   padding-left: 14px;
   font-family: 'Gotham Pro', 'Arial', sans-serif;
+  margin-bottom: 60px;
 }
 
 .wrapper--reviews .paginator__label {
@@ -60,4 +60,12 @@
 
 .wrapper--reviews .paginator__list {
   margin: -3px 5px 0 14px;
+}
+
+.wrapper--reviews .paginator__link--active {
+  color: #ec1e79;
+}
+
+.wrapper--reviews .paginator__link:hover {
+  color: #ec1e79
 }

@@ -3,17 +3,15 @@
 .news {}
 
 .news__list {
-  margin: 0;
-  padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
-  padding-bottom: 25px;
-  padding-top: 19px;
+  padding-bottom: 5px;
+  padding-top: 57px;
 }
 
 .news__item {
   display: flex;
   border-bottom: 2px solid #f5f5f5;
-  padding: 16px 0 19px 0;
+  padding: 16px 0 17px 0;
   margin-bottom: 9px;
 }
 
@@ -23,12 +21,12 @@
 
 .news__logo {
   display: block;
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 174px;
   margin: 0;
   margin-top: 4px;
-  margin-right: 20px;
-  /* padding: 4px 0 0 2px; */
+  margin-right: 24px;
+  padding: 0px 0 0 0px;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -47,7 +45,7 @@
 .news__time {
   color: #6f6e6e;
   display: block;
-  padding: 2px 0 0 0px;
+  padding-top: 3px;
 }
 
 .news__head {
@@ -63,5 +61,5 @@
 }
 
 .news__item:not(:first-child) .news__desc {
-  padding-right: 90px;
+  padding-right: 37px;
 }

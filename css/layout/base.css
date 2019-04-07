@@ -34,26 +34,26 @@ body {
   box-sizing: border-box;
 }
 
-img {
-  display: block;
+ul {
+  padding: 0;
+  margin: 0;
 }
 
-.wrapper {
-  min-width: 1100px;
-  display: flex;
-  flex-direction: column;
+ul li {
+  list-style: none;
+}
+
+img {
+  display: block;
 }
 
 .main {
   flex: 1 0 auto;
 }
 
-.sidebar {
-  width: 180px;
-}
 
 .container {
-  width: 1100px;
+  width: 1165px;
   margin: 0 auto;
 }
 
@@ -62,45 +62,38 @@ img {
   justify-content: space-between;
 }
 
-.container--feedback {
-  background-color: #f5f5f5;
-  width: 700px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
 .main-content {
   width: 82.5%;
-  padding-top: 24px;
-  padding-bottom: 72px;
+  padding-bottom: 60px;
 }
 
 .section-title {
   font-size: 49px;
   line-height: 38px;
   font-weight: bold;
-  padding-left: 5px;
+  margin: 0;
 }
 
 .wrapper--reviews .main-content {
-  padding-top: 10px;
+  padding-top: 14px;
   padding-bottom: 39px;
 }
 
 .wrapper--reviews .section-title {
   line-height: 25px;
+  padding-bottom: 33px;
 }
 
 .wrapper--reviews .section-title--feedback {
-  padding-left: 69px;
-  padding-top: 63px;
+  padding-left: 13%;
+  padding-top: 56px;
   letter-spacing: -0.5px;
-  line-height: 8px;
+  line-height: 24px;
 }
 
 .wrapper--tarifs .main-content {
-  padding-top: 41px;
-  padding-bottom: 39px;
+  padding-bottom: 8px;
+  width: 75.3%;
 }
 
 .wrapper--tarifs .section-title {
@@ -109,7 +102,9 @@ img {
 }
 
 .wrapper--tarifs .section-title--partners {
-  padding-left: 11px;
-  padding-bottom: 8px;
-  line-height: 11px;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 21px;
 }

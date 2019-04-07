@@ -1,4 +1,5 @@
 .features {
+  margin-top: 2px;
   padding-bottom: 23px;
 }
 
@@ -18,10 +19,14 @@
   flex-direction: column;
   align-items: center;
   padding: 23px 12px 0 25px;
+  border: 1px solid #e8e9ed;
 }
 
 .features__item:nth-child(3n) {
   margin-right: 0;
+}
+.features__item:nth-child(n+2) {
+  display: none
 }
 
 .features__logo {
@@ -32,6 +37,7 @@
   background-color: #27273e;
   border-radius: 50%;
   margin-bottom: 18px;
+  
 }
 
 .features__logo--flower {

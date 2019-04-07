@@ -1,0 +1,13 @@
+
+.logo {
+  width: 18%;
+  background-repeat: no-repeat;
+  background-position: 19px 12px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  cursor: pointer;
+}
+
+.logo:hover .logo__img {
+  animation: logo 500ms ease-in-out 0ms 5 alternate forwards;
+}

@@ -21,7 +21,7 @@
 }
 
 .author-info__text {
-  padding: 10px 6px 0 19px;
+  padding: 11px 6px 0 0px;
   margin: 0;
 }
 
@@ -32,12 +32,14 @@
 
 .author-info__author {
   margin: 0;
-  padding-left: 18px;
   padding-bottom: 14px;
 }
 
+.author-info__friends-link {
+  cursor: pointer;
+  color: #ffffff;
+}
+
 .footer-logo {
-  width: 20%;
-  padding: 0px 0 0 40px;
-  margin-top: -4px;
+  padding: 14px 6px 0 0px;
 }

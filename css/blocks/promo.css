@@ -1,15 +1,18 @@
 .promo {
-  background-image: url('../../img/reviews-!.png');
+  background-image: url(../../img/reviews-!.png);
   background-repeat: repeat;
   background-color: #27273e;
-  margin-bottom: 58px;
+  margin-top: 50px;
+  padding-bottom: 9px;
+  margin-bottom: 23px;
 }
 
 .promo__text {
   font-size: 18px;
   line-height: 30px;
   color: #ffffff;
-  padding: 40px 242px 44px 232px;
+  text-align: center;
+  padding: 22px 0 0 0;
 }
 
 .promo__privilege {
