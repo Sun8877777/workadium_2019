@@ -2,8 +2,11 @@
   border: 1px solid #e8e9ed;
   margin-top: 30px;
   margin-bottom: 22px;
-  padding-Top: 22px;
+  padding-Top: 5px;
   padding-bottom: 14px;
+}
+.partners .title-aside {
+  padding: 2px 0px 8px 0;
 }
 
 .partners__list {

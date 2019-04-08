@@ -46,8 +46,17 @@ img {
   display: block;
 }
 
-.main {
+.wrapper {
+  min-width: 1165px;
+}
+
+.main-content {
   flex: 1 0 auto;
+}
+
+.main {
+  width: 82.5%;
+  padding-bottom: 60px;
 }
 
 .container {
@@ -60,10 +69,6 @@ img {
   justify-content: space-between;
 }
 
-.main-content {
-  width: 82.5%;
-  padding-bottom: 60px;
-}
 
 .section-title {
   font-size: 49px;
@@ -72,9 +77,23 @@ img {
   margin: 0;
 }
 
-.wrapper--reviews .main-content {
+.title-aside {
+  width: 100%;
+  height: auto;
+  padding: 2px 14px 0 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  background-color: transparent;
+  background-image: none;
+}
+
+.wrapper--reviews .main {
   padding-top: 14px;
-  padding-bottom: 39px;
+  padding-bottom: 50px;
 }
 
 .wrapper--reviews .section-title {
@@ -89,7 +108,7 @@ img {
   line-height: 24px;
 }
 
-.wrapper--tarifs .main-content {
+.wrapper--tarifs .main {
   padding-bottom: 8px;
   width: 75.3%;
 }

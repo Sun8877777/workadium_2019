@@ -87,7 +87,6 @@
 }
 
 .wrapper--tarifs .info-company__shedule-list {
-  display: block;
   margin-top: 24px;
   box-shadow: 5px 5px 10px 0px #cecece;
 }
