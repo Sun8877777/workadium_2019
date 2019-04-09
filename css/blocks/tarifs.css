@@ -31,6 +31,7 @@
   margin: 0;
   margin-bottom: 27px;
   overflow: hidden;
+  transition: 1s;
 }
 
 .tarig__logo-caption {
@@ -62,6 +63,7 @@
   text-align: center;
   color: #ec1e79;
   margin-top: -5px;
+  transition: 1s;
 }
 
 .tarif__logo:hover .tarig__logo-caption,

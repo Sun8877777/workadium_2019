@@ -28,6 +28,7 @@
   padding-left: 40px;
   color: inherit;
   text-decoration: none;
+  transition: 500ms;
 }
 
 .nav__link::before {

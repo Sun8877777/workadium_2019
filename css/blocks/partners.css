@@ -25,13 +25,13 @@
   text-align: center;
   cursor: pointer;
   opacity: 0.5;
+  transition: 300ms;
   filter: grayscale(1);
 }
 
 .partners__link:hover {
   opacity: 1;
   filter: grayscale(0);
-  transition: 300ms;
 }
 
 .partners__logo {
