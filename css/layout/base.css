@@ -48,6 +48,8 @@ img {
 
 .wrapper {
   min-width: 1165px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-content {
