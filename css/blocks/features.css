@@ -4,7 +4,6 @@
 }
 
 .features__item {
-  width: 272px;
   margin-right: 0;
   display: flex;
   flex-direction: column;
